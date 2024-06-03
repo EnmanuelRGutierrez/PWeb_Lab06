@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> UniversidadesLicenciadas </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <div class="titulo">
+        <h1>UNIVERSIDADES LICENCIADAS</h1>
+    </div>
+</header>
+
+<form action="/cgi-bin/Universidades.cgi" method="get">
+    <h2>FILTRO POR:</h2>
+    <select id="Busqueda" name="Busqueda por seleccion" class="BusquedaA">
+        <option value="NOMBRE">NOMBRE DE LA UNIVERSIDAD</option>
+        <option value="LICENCIAMIENTO">PERIODO DE LICENCIAMIENTO</option>
+        <option value="DEPARTAMENTO">DEPARTAMENTO</option>
+        <option value="DENOMINACION">DENOMINACION DEL PROGRAMA</option>
+    </select>
+        
+    <input type="text" name="linkArchivo" class="text-link" placeholder="Caracteristica De Buscada">
+    <input type="submit" value="Solicitar Info" class="submit">
+</form>
+
+<body>
+</body>
+
+</html>
